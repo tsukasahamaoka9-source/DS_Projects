@@ -9,23 +9,22 @@
 - test.csv: テスト用データセット
 - sample_submission.csv: 提出用のサンプルファイル
 
-train.csvには、顧客の特徴量と離脱フラグが含まれています。
+欠損値：なし（TotalCharges は数値変換の際に欠損値が発生する可能性あり？）
 
 # 各カラムの意味と実務的な解釈
 
 id
    顧客ID。モデルには不要なので削除。
 gender
-   性別['Male', 'Female']。男女でChurn との相関や傾向は見られない。
+   性別['Male', 'Female']。男女はほぼ半々で、Churn との相関や傾向は見られない。
 SeniorCitizen
-   高齢者かどうか[0, 1]。だいたい65歳以上が該当。
-   65歳以上は離脱率が高い傾向?
+   高齢者かどうか[0, 1]。一般的に65歳以上が該当。11.4%が高齢者で離脱率は50%ほどで高い傾向
 Partner
    配偶者がいるか['Yes', 'No']。
    Partner がいる顧客は離脱率が低い傾向。
 Dependents
    扶養家族がいるか['Yes', 'No']。
-   Dependents がいる顧客は離脱率が低い傾向。差は大きめ。
+   Partner同様。Dependents がいる顧客は離脱率が低い傾向。差は大きめ。
 tenure
    契約月数（0〜72）。
    短いほど離脱しやすい重要特徴。長いほどChurn しにくい傾向。
@@ -59,7 +58,7 @@ StreamingMovies
    同じく若干、Yesのほうが離脱率が低い？とはいえ	No internet service の顧客の方が圧倒的に離脱率が低い傾向。
 Contract
    契約期間['One year', 'Two year', 'Month-to-month']。
-   Month-to-month は離脱率が非常に高い。One year は低め、Two year はかなり低い。最重要クラスの特徴量だ。
+   Month-to-month は離脱率が非常に高い。One year は低め、Two year はかなり低い。最重要クラスの特徴量。
 PaperlessBilling
   紙の請求書かどうか['Yes', 'No']。
    PaperlessBilling が 'Yes' の顧客は離脱率が高い傾向。紙の請求書を選択している顧客の内訳は？
@@ -71,7 +70,6 @@ MonthlyCharges
    月額料金。
    高い層で Churn が増える傾向。
    周期性があるようにも見える。
-
 TotalCharges
    総支払額。tenure × MonthlyCharges に近い値。
    TotalCharges は低〜中で Churn が目立ち、高額帯は Non-Churn が多めです（tenure の影響も強い）？
