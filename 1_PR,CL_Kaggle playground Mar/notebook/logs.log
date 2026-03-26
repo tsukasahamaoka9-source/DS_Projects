@@ -1,0 +1,1170 @@
+2026-03-25 18:22:18,030:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-25 18:22:18,030:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-25 18:22:18,030:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-25 18:22:18,030:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-03-25 18:22:19,407:INFO:PyCaret ClassificationExperiment
+2026-03-25 18:22:19,407:INFO:Logging name: clf-default-name
+2026-03-25 18:22:19,407:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-03-25 18:22:19,407:INFO:version 3.3.2
+2026-03-25 18:22:19,407:INFO:Initializing setup()
+2026-03-25 18:22:19,407:INFO:self.USI: 3e62
+2026-03-25 18:22:19,407:INFO:self._variable_keys: {'X_train', '_ml_usecase', 'USI', 'exp_name_log', 'seed', 'n_jobs_param', 'idx', 'memory', 'log_plots_param', 'gpu_param', 'fix_imbalance', 'is_multiclass', 'logging_param', 'X_test', 'data', 'X', 'target_param', 'y', 'html_param', 'exp_id', 'y_train', 'fold_groups_param', 'fold_shuffle_param', 'fold_generator', 'gpu_n_jobs_param', 'pipeline', 'y_test', '_available_plots'}
+2026-03-25 18:22:19,407:INFO:Checking environment
+2026-03-25 18:22:19,407:INFO:python_version: 3.10.19
+2026-03-25 18:22:19,407:INFO:python_build: ('main', 'Oct 21 2025 16:37:10')
+2026-03-25 18:22:19,407:INFO:machine: arm64
+2026-03-25 18:22:19,407:INFO:platform: macOS-26.3.1-arm64-arm-64bit
+2026-03-25 18:22:19,407:INFO:Memory: svmem(total=25769803776, available=6789152768, percent=73.7, used=10812932096, free=61407232, active=6741737472, inactive=6690160640, wired=4071194624)
+2026-03-25 18:22:19,407:INFO:Physical Core: 12
+2026-03-25 18:22:19,407:INFO:Logical Core: 12
+2026-03-25 18:22:19,407:INFO:Checking libraries
+2026-03-25 18:22:19,407:INFO:System:
+2026-03-25 18:22:19,407:INFO:    python: 3.10.19 (main, Oct 21 2025, 16:37:10) [Clang 20.1.8 ]
+2026-03-25 18:22:19,407:INFO:executable: /opt/anaconda3/envs/kaggle-env/bin/python
+2026-03-25 18:22:19,407:INFO:   machine: macOS-26.3.1-arm64-arm-64bit
+2026-03-25 18:22:19,407:INFO:PyCaret required dependencies:
+2026-03-25 18:22:19,407:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:19,425:INFO:                 pip: 26.0.1
+2026-03-25 18:22:19,425:INFO:          setuptools: 80.10.2
+2026-03-25 18:22:19,425:INFO:             pycaret: 3.3.2
+2026-03-25 18:22:19,425:INFO:             IPython: 8.30.0
+2026-03-25 18:22:19,425:INFO:          ipywidgets: 8.1.8
+2026-03-25 18:22:19,425:INFO:                tqdm: 4.67.3
+2026-03-25 18:22:19,425:INFO:               numpy: 1.26.4
+2026-03-25 18:22:19,425:INFO:              pandas: 2.1.4
+2026-03-25 18:22:19,425:INFO:              jinja2: 3.1.6
+2026-03-25 18:22:19,425:INFO:               scipy: 1.11.4
+2026-03-25 18:22:19,425:INFO:              joblib: 1.0.1
+2026-03-25 18:22:19,425:INFO:             sklearn: 1.4.2
+2026-03-25 18:22:19,425:INFO:                pyod: 2.0.7
+2026-03-25 18:22:19,425:INFO:            imblearn: 0.14.1
+2026-03-25 18:22:19,425:INFO:   category_encoders: 2.7.0
+2026-03-25 18:22:19,425:INFO:            lightgbm: 4.6.0
+2026-03-25 18:22:19,425:INFO:               numba: 0.62.1
+2026-03-25 18:22:19,425:INFO:            requests: 2.32.5
+2026-03-25 18:22:19,425:INFO:          matplotlib: 3.7.5
+2026-03-25 18:22:19,425:INFO:          scikitplot: 0.3.7
+2026-03-25 18:22:19,425:INFO:         yellowbrick: 1.5
+2026-03-25 18:22:19,425:INFO:              plotly: 6.6.0
+2026-03-25 18:22:19,425:INFO:    plotly-resampler: Not installed
+2026-03-25 18:22:19,425:INFO:             kaleido: 1.2.0
+2026-03-25 18:22:19,425:INFO:           schemdraw: 0.15
+2026-03-25 18:22:19,425:INFO:         statsmodels: 0.14.6
+2026-03-25 18:22:19,425:INFO:              sktime: 0.26.0
+2026-03-25 18:22:19,425:INFO:               tbats: 1.1.3
+2026-03-25 18:22:19,425:INFO:            pmdarima: 2.0.4
+2026-03-25 18:22:19,425:INFO:              psutil: 7.2.2
+2026-03-25 18:22:19,425:INFO:          markupsafe: 2.0.1
+2026-03-25 18:22:19,425:INFO:             pickle5: Not installed
+2026-03-25 18:22:19,425:INFO:         cloudpickle: 3.1.2
+2026-03-25 18:22:19,425:INFO:         deprecation: 2.1.0
+2026-03-25 18:22:19,425:INFO:              xxhash: 3.6.0
+2026-03-25 18:22:19,425:INFO:           wurlitzer: 3.1.1
+2026-03-25 18:22:19,425:INFO:PyCaret optional dependencies:
+2026-03-25 18:22:19,430:INFO:                shap: Not installed
+2026-03-25 18:22:19,430:INFO:           interpret: Not installed
+2026-03-25 18:22:19,430:INFO:                umap: Not installed
+2026-03-25 18:22:19,430:INFO:     ydata_profiling: 4.18.1
+2026-03-25 18:22:19,430:INFO:  explainerdashboard: Not installed
+2026-03-25 18:22:19,430:INFO:             autoviz: Not installed
+2026-03-25 18:22:19,430:INFO:           fairlearn: Not installed
+2026-03-25 18:22:19,430:INFO:          deepchecks: Not installed
+2026-03-25 18:22:19,430:INFO:             xgboost: Not installed
+2026-03-25 18:22:19,430:INFO:            catboost: Not installed
+2026-03-25 18:22:19,430:INFO:              kmodes: Not installed
+2026-03-25 18:22:19,430:INFO:             mlxtend: Not installed
+2026-03-25 18:22:19,430:INFO:       statsforecast: Not installed
+2026-03-25 18:22:19,430:INFO:        tune_sklearn: Not installed
+2026-03-25 18:22:19,430:INFO:                 ray: Not installed
+2026-03-25 18:22:19,430:INFO:            hyperopt: Not installed
+2026-03-25 18:22:19,430:INFO:              optuna: 4.5.0
+2026-03-25 18:22:19,430:INFO:               skopt: Not installed
+2026-03-25 18:22:19,430:INFO:              mlflow: Not installed
+2026-03-25 18:22:19,430:INFO:              gradio: Not installed
+2026-03-25 18:22:19,430:INFO:             fastapi: Not installed
+2026-03-25 18:22:19,430:INFO:             uvicorn: Not installed
+2026-03-25 18:22:19,430:INFO:              m2cgen: Not installed
+2026-03-25 18:22:19,430:INFO:           evidently: Not installed
+2026-03-25 18:22:19,430:INFO:               fugue: Not installed
+2026-03-25 18:22:19,430:INFO:           streamlit: Not installed
+2026-03-25 18:22:19,430:INFO:             prophet: Not installed
+2026-03-25 18:22:19,430:INFO:None
+2026-03-25 18:22:19,430:INFO:Set up data.
+2026-03-25 18:22:19,829:INFO:Set up folding strategy.
+2026-03-25 18:22:19,829:INFO:Set up train/test split.
+2026-03-25 18:22:20,058:INFO:Set up index.
+2026-03-25 18:22:20,064:INFO:Assigning column types.
+2026-03-25 18:22:20,091:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-03-25 18:22:20,103:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-25 18:22:20,105:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-25 18:22:20,116:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,116:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,128:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-03-25 18:22:20,128:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-25 18:22:20,136:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,136:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,136:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-03-25 18:22:20,149:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-25 18:22:20,157:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,157:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,169:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-03-25 18:22:20,177:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,177:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,177:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-03-25 18:22:20,197:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,197:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,217:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,217:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:20,220:INFO:Preparing preprocessing pipeline...
+2026-03-25 18:22:20,226:INFO:Set up label encoding.
+2026-03-25 18:22:20,226:INFO:Set up simple imputation.
+2026-03-25 18:22:20,268:INFO:Set up encoding of ordinal features.
+2026-03-25 18:22:20,321:INFO:Set up encoding of categorical features.
+2026-03-25 18:22:23,686:INFO:Finished creating preprocessing pipeline.
+2026-03-25 18:22:23,698:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/lj/rcsyr8rj4gl5yjh1p78gq8rr0000gn/T/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'SeniorCitizen', 'tenure',
+                                             'MonthlyCharges', 'TotalCharges'],
+                                    transformer=SimpleImpu...
+                                             'Contract', 'PaymentMethod'],
+                                    transformer=OneHotEncoder(cols=['MultipleLines',
+                                                                    'InternetService',
+                                                                    'OnlineSecurity',
+                                                                    'OnlineBackup',
+                                                                    'DeviceProtection',
+                                                                    'TechSupport',
+                                                                    'StreamingTV',
+                                                                    'StreamingMovies',
+                                                                    'Contract',
+                                                                    'PaymentMethod'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0)))],
+         verbose=False)
+2026-03-25 18:22:23,698:INFO:Creating final display dataframe.
+2026-03-25 18:22:27,012:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target             Churn
+2                   Target type            Binary
+3                Target mapping     No: 0, Yes: 1
+4           Original data shape      (594194, 21)
+5        Transformed data shape      (594194, 42)
+6   Transformed train set shape      (415935, 42)
+7    Transformed test set shape      (178259, 42)
+8              Numeric features                 5
+9          Categorical features                15
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator   StratifiedKFold
+17                  Fold Number                 5
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  clf-default-name
+22                          USI              3e62
+2026-03-25 18:22:27,033:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:27,033:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:27,055:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:27,055:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:22:27,056:INFO:setup() successfully completed in 7.65s...............
+2026-03-25 18:22:27,068:INFO:Initializing compare_models()
+2026-03-25 18:22:27,068:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, include=['lr', 'rf', 'et', 'gbc', 'lightgbm'], fold=5, round=4, cross_validation=True, sort=AUC, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=False, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, 'include': ['lr', 'rf', 'et', 'gbc', 'lightgbm'], 'exclude': None, 'fold': 5, 'round': 4, 'cross_validation': True, 'sort': 'AUC', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': False, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2026-03-25 18:22:27,069:INFO:Checking exceptions
+2026-03-25 18:22:27,108:INFO:Preparing display monitor
+2026-03-25 18:22:27,109:INFO:Initializing Logistic Regression
+2026-03-25 18:22:27,109:INFO:Total runtime is 5.841255187988282e-07 minutes
+2026-03-25 18:22:27,109:INFO:SubProcess create_model() called ==================================
+2026-03-25 18:22:27,110:INFO:Initializing create_model()
+2026-03-25 18:22:27,110:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=lr, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x33f141810>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:22:27,110:INFO:Checking exceptions
+2026-03-25 18:22:27,110:INFO:Importing libraries
+2026-03-25 18:22:27,110:INFO:Copying training dataset
+2026-03-25 18:22:27,170:INFO:Defining folds
+2026-03-25 18:22:27,173:INFO:Declaring metric variables
+2026-03-25 18:22:27,173:INFO:Importing untrained model
+2026-03-25 18:22:27,173:INFO:Logistic Regression Imported successfully
+2026-03-25 18:22:27,177:INFO:Starting cross validation
+2026-03-25 18:22:27,179:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:22:30,251:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:30,252:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:30,254:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:30,255:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:30,256:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:41,093:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:41,384:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:41,672:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:45,427:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:45,710:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:45,993:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:46,978:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:47,265:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:47,272:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2026-03-25 18:22:47,328:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2026-03-25 18:22:47,548:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:47,835:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:47,902:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:48,122:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:48,187:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:48,487:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:48,537:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:22:49,042:INFO:Calculating mean and std
+2026-03-25 18:22:49,043:INFO:Creating metrics dataframe
+2026-03-25 18:22:49,050:INFO:Uploading results into container
+2026-03-25 18:22:49,051:INFO:Uploading model into container now
+2026-03-25 18:22:49,051:INFO:_master_model_container: 1
+2026-03-25 18:22:49,051:INFO:_display_container: 2
+2026-03-25 18:22:49,051:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2026-03-25 18:22:49,051:INFO:create_model() successfully completed......................................
+2026-03-25 18:22:49,168:INFO:SubProcess create_model() end ==================================
+2026-03-25 18:22:49,168:INFO:Creating metrics dataframe
+2026-03-25 18:22:49,169:INFO:Initializing Random Forest Classifier
+2026-03-25 18:22:49,169:INFO:Total runtime is 0.36766531864802043 minutes
+2026-03-25 18:22:49,169:INFO:SubProcess create_model() called ==================================
+2026-03-25 18:22:49,169:INFO:Initializing create_model()
+2026-03-25 18:22:49,169:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=rf, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x33f141810>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:22:49,169:INFO:Checking exceptions
+2026-03-25 18:22:49,169:INFO:Importing libraries
+2026-03-25 18:22:49,169:INFO:Copying training dataset
+2026-03-25 18:22:49,242:INFO:Defining folds
+2026-03-25 18:22:49,242:INFO:Declaring metric variables
+2026-03-25 18:22:49,243:INFO:Importing untrained model
+2026-03-25 18:22:49,243:INFO:Random Forest Classifier Imported successfully
+2026-03-25 18:22:49,243:INFO:Starting cross validation
+2026-03-25 18:22:49,244:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:22:50,963:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:50,963:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:22:50,963:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:23:11,195:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:11,363:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:11,626:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:11,735:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:12,060:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:12,674:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:13,407:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:13,488:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:13,571:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:13,693:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:13,769:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:13,851:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:13,973:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:14,046:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:14,129:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:14,606:INFO:Calculating mean and std
+2026-03-25 18:23:14,606:INFO:Creating metrics dataframe
+2026-03-25 18:23:14,610:INFO:Uploading results into container
+2026-03-25 18:23:14,610:INFO:Uploading model into container now
+2026-03-25 18:23:14,610:INFO:_master_model_container: 2
+2026-03-25 18:23:14,610:INFO:_display_container: 2
+2026-03-25 18:23:14,611:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=123, verbose=0,
+                       warm_start=False)
+2026-03-25 18:23:14,611:INFO:create_model() successfully completed......................................
+2026-03-25 18:23:14,705:INFO:SubProcess create_model() end ==================================
+2026-03-25 18:23:14,705:INFO:Creating metrics dataframe
+2026-03-25 18:23:14,707:INFO:Initializing Extra Trees Classifier
+2026-03-25 18:23:14,707:INFO:Total runtime is 0.7932923634847004 minutes
+2026-03-25 18:23:14,707:INFO:SubProcess create_model() called ==================================
+2026-03-25 18:23:14,707:INFO:Initializing create_model()
+2026-03-25 18:23:14,707:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=et, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x33f141810>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:23:14,707:INFO:Checking exceptions
+2026-03-25 18:23:14,707:INFO:Importing libraries
+2026-03-25 18:23:14,707:INFO:Copying training dataset
+2026-03-25 18:23:14,777:INFO:Defining folds
+2026-03-25 18:23:14,777:INFO:Declaring metric variables
+2026-03-25 18:23:14,778:INFO:Importing untrained model
+2026-03-25 18:23:14,778:INFO:Extra Trees Classifier Imported successfully
+2026-03-25 18:23:14,778:INFO:Starting cross validation
+2026-03-25 18:23:14,779:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:23:16,315:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:23:16,315:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:23:37,228:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:37,301:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:37,489:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:38,266:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:38,396:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:38,437:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:38,916:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:39,098:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:39,258:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:39,572:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:39,745:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:39,859:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:40,027:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:40,138:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:40,303:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:23:40,780:INFO:Calculating mean and std
+2026-03-25 18:23:40,781:INFO:Creating metrics dataframe
+2026-03-25 18:23:40,784:INFO:Uploading results into container
+2026-03-25 18:23:40,784:INFO:Uploading model into container now
+2026-03-25 18:23:40,784:INFO:_master_model_container: 3
+2026-03-25 18:23:40,784:INFO:_display_container: 2
+2026-03-25 18:23:40,785:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False)
+2026-03-25 18:23:40,785:INFO:create_model() successfully completed......................................
+2026-03-25 18:23:40,855:INFO:SubProcess create_model() end ==================================
+2026-03-25 18:23:40,855:INFO:Creating metrics dataframe
+2026-03-25 18:23:40,856:INFO:Initializing Gradient Boosting Classifier
+2026-03-25 18:23:40,856:INFO:Total runtime is 1.2291227976481118 minutes
+2026-03-25 18:23:40,857:INFO:SubProcess create_model() called ==================================
+2026-03-25 18:23:40,857:INFO:Initializing create_model()
+2026-03-25 18:23:40,857:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=gbc, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x33f141810>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:23:40,857:INFO:Checking exceptions
+2026-03-25 18:23:40,857:INFO:Importing libraries
+2026-03-25 18:23:40,857:INFO:Copying training dataset
+2026-03-25 18:23:40,918:INFO:Defining folds
+2026-03-25 18:23:40,918:INFO:Declaring metric variables
+2026-03-25 18:23:40,918:INFO:Importing untrained model
+2026-03-25 18:23:40,918:INFO:Gradient Boosting Classifier Imported successfully
+2026-03-25 18:23:40,918:INFO:Starting cross validation
+2026-03-25 18:23:40,920:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:24:26,968:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,210:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,241:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,254:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,266:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,277:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,495:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,526:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,537:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,546:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,569:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,778:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,814:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,824:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:27,859:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:28,346:INFO:Calculating mean and std
+2026-03-25 18:24:28,346:INFO:Creating metrics dataframe
+2026-03-25 18:24:28,349:INFO:Uploading results into container
+2026-03-25 18:24:28,350:INFO:Uploading model into container now
+2026-03-25 18:24:28,350:INFO:_master_model_container: 4
+2026-03-25 18:24:28,350:INFO:_display_container: 2
+2026-03-25 18:24:28,351:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-03-25 18:24:28,351:INFO:create_model() successfully completed......................................
+2026-03-25 18:24:28,421:INFO:SubProcess create_model() end ==================================
+2026-03-25 18:24:28,422:INFO:Creating metrics dataframe
+2026-03-25 18:24:28,423:INFO:Initializing Light Gradient Boosting Machine
+2026-03-25 18:24:28,423:INFO:Total runtime is 2.0218958020210263 minutes
+2026-03-25 18:24:28,423:INFO:SubProcess create_model() called ==================================
+2026-03-25 18:24:28,423:INFO:Initializing create_model()
+2026-03-25 18:24:28,423:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x33f141810>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:24:28,423:INFO:Checking exceptions
+2026-03-25 18:24:28,423:INFO:Importing libraries
+2026-03-25 18:24:28,423:INFO:Copying training dataset
+2026-03-25 18:24:28,481:INFO:Defining folds
+2026-03-25 18:24:28,481:INFO:Declaring metric variables
+2026-03-25 18:24:28,481:INFO:Importing untrained model
+2026-03-25 18:24:28,481:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-25 18:24:28,481:INFO:Starting cross validation
+2026-03-25 18:24:28,482:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:24:30,213:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:24:35,150:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,158:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,201:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,252:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,440:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,447:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,501:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,548:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,745:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,747:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,799:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,823:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:35,847:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:36,111:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:36,396:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:24:36,882:INFO:Calculating mean and std
+2026-03-25 18:24:36,883:INFO:Creating metrics dataframe
+2026-03-25 18:24:36,884:INFO:Uploading results into container
+2026-03-25 18:24:36,884:INFO:Uploading model into container now
+2026-03-25 18:24:36,884:INFO:_master_model_container: 5
+2026-03-25 18:24:36,884:INFO:_display_container: 2
+2026-03-25 18:24:36,884:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-25 18:24:36,884:INFO:create_model() successfully completed......................................
+2026-03-25 18:24:36,937:INFO:SubProcess create_model() end ==================================
+2026-03-25 18:24:36,937:INFO:Creating metrics dataframe
+2026-03-25 18:24:36,940:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/pycaret/internal/pycaret_experiment/supervised_experiment.py:323: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  master_display_.apply(
+
+2026-03-25 18:24:36,941:INFO:Initializing create_model()
+2026-03-25 18:24:36,941:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:24:36,941:INFO:Checking exceptions
+2026-03-25 18:24:36,941:INFO:Importing libraries
+2026-03-25 18:24:36,941:INFO:Copying training dataset
+2026-03-25 18:24:36,992:INFO:Defining folds
+2026-03-25 18:24:36,992:INFO:Declaring metric variables
+2026-03-25 18:24:36,992:INFO:Importing untrained model
+2026-03-25 18:24:36,992:INFO:Declaring custom model
+2026-03-25 18:24:36,993:INFO:Light Gradient Boosting Machine Imported successfully
+2026-03-25 18:24:36,994:INFO:Cross validation set to False
+2026-03-25 18:24:36,994:INFO:Fitting Model
+2026-03-25 18:24:39,838:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2026-03-25 18:24:39,840:INFO:[LightGBM] [Info] Number of positive: 93672, number of negative: 322263
+2026-03-25 18:24:39,849:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.004467 seconds.
+2026-03-25 18:24:39,849:INFO:You can set `force_row_wise=true` to remove the overhead.
+2026-03-25 18:24:39,849:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2026-03-25 18:24:39,849:INFO:[LightGBM] [Info] Total Bins 912
+2026-03-25 18:24:39,849:INFO:[LightGBM] [Info] Number of data points in the train set: 415935, number of used features: 41
+2026-03-25 18:24:39,850:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.225208 -> initscore=-1.235569
+2026-03-25 18:24:39,850:INFO:[LightGBM] [Info] Start training from score -1.235569
+2026-03-25 18:24:40,642:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-25 18:24:40,642:INFO:create_model() successfully completed......................................
+2026-03-25 18:24:40,692:INFO:_master_model_container: 5
+2026-03-25 18:24:40,692:INFO:_display_container: 2
+2026-03-25 18:24:40,692:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-03-25 18:24:40,692:INFO:compare_models() successfully completed......................................
+2026-03-25 18:24:40,706:INFO:gpu_param set to False
+2026-03-25 18:24:40,729:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:24:40,729:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:24:40,752:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:24:40,752:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-03-25 18:24:40,759:INFO:Initializing create_model()
+2026-03-25 18:24:40,759:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=gbc, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:24:40,759:INFO:Checking exceptions
+2026-03-25 18:24:40,761:INFO:Importing libraries
+2026-03-25 18:24:40,761:INFO:Copying training dataset
+2026-03-25 18:24:40,819:INFO:Defining folds
+2026-03-25 18:24:40,819:INFO:Declaring metric variables
+2026-03-25 18:24:40,819:INFO:Importing untrained model
+2026-03-25 18:24:40,819:INFO:Gradient Boosting Classifier Imported successfully
+2026-03-25 18:24:40,820:INFO:Starting cross validation
+2026-03-25 18:24:40,820:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:25:26,715:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:26,876:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:26,908:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:26,912:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:26,976:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:26,999:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,161:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,193:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,195:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,261:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,282:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,448:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,476:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,481:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:27,546:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:25:28,031:INFO:Calculating mean and std
+2026-03-25 18:25:28,035:INFO:Creating metrics dataframe
+2026-03-25 18:25:28,039:INFO:Finalizing model
+2026-03-25 18:26:19,763:INFO:Uploading results into container
+2026-03-25 18:26:19,764:INFO:Uploading model into container now
+2026-03-25 18:26:19,765:INFO:_master_model_container: 6
+2026-03-25 18:26:19,765:INFO:_display_container: 3
+2026-03-25 18:26:19,766:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-03-25 18:26:19,766:INFO:create_model() successfully completed......................................
+2026-03-25 18:26:19,838:INFO:Initializing tune_model()
+2026-03-25 18:26:19,838:INFO:tune_model(estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>)
+2026-03-25 18:26:19,838:INFO:Checking exceptions
+2026-03-25 18:26:19,867:INFO:Copying training dataset
+2026-03-25 18:26:19,908:INFO:Checking base model
+2026-03-25 18:26:19,908:INFO:Base model : Gradient Boosting Classifier
+2026-03-25 18:26:19,908:INFO:Declaring metric variables
+2026-03-25 18:26:19,909:INFO:Defining Hyperparameters
+2026-03-25 18:26:19,957:INFO:Tuning with n_jobs=-1
+2026-03-25 18:26:19,957:INFO:Initializing RandomizedSearchCV
+2026-03-25 18:26:22,380:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:26:22,381:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:26:22,429:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:26:35,111:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/joblib/externals/loky/process_executor.py:688: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+
+2026-03-25 18:26:38,060:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:27:04,535:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-03-25 18:32:25,677:INFO:best_params: {'actual_estimator__subsample': 0.85, 'actual_estimator__n_estimators': 230, 'actual_estimator__min_samples_split': 5, 'actual_estimator__min_samples_leaf': 5, 'actual_estimator__min_impurity_decrease': 0.02, 'actual_estimator__max_features': 1.0, 'actual_estimator__max_depth': 7, 'actual_estimator__learning_rate': 0.15}
+2026-03-25 18:32:25,680:INFO:Hyperparameter search completed
+2026-03-25 18:32:25,680:INFO:SubProcess create_model() called ==================================
+2026-03-25 18:32:25,681:INFO:Initializing create_model()
+2026-03-25 18:32:25,681:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x307921ed0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'subsample': 0.85, 'n_estimators': 230, 'min_samples_split': 5, 'min_samples_leaf': 5, 'min_impurity_decrease': 0.02, 'max_features': 1.0, 'max_depth': 7, 'learning_rate': 0.15})
+2026-03-25 18:32:25,681:INFO:Checking exceptions
+2026-03-25 18:32:25,681:INFO:Importing libraries
+2026-03-25 18:32:25,682:INFO:Copying training dataset
+2026-03-25 18:32:25,758:INFO:Defining folds
+2026-03-25 18:32:25,758:INFO:Declaring metric variables
+2026-03-25 18:32:25,758:INFO:Importing untrained model
+2026-03-25 18:32:25,758:INFO:Declaring custom model
+2026-03-25 18:32:25,759:INFO:Gradient Boosting Classifier Imported successfully
+2026-03-25 18:32:25,759:INFO:Starting cross validation
+2026-03-25 18:32:25,765:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:35:41,397:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,471:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,543:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,571:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,616:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,690:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,751:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,836:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,858:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,899:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:41,977:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:42,032:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:42,128:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:42,149:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:42,189:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:35:42,669:INFO:Calculating mean and std
+2026-03-25 18:35:42,672:INFO:Creating metrics dataframe
+2026-03-25 18:35:42,675:INFO:Finalizing model
+2026-03-25 18:39:22,756:INFO:Uploading results into container
+2026-03-25 18:39:22,758:INFO:Uploading model into container now
+2026-03-25 18:39:22,759:INFO:_master_model_container: 7
+2026-03-25 18:39:22,759:INFO:_display_container: 4
+2026-03-25 18:39:22,759:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-03-25 18:39:22,759:INFO:create_model() successfully completed......................................
+2026-03-25 18:39:22,830:INFO:SubProcess create_model() end ==================================
+2026-03-25 18:39:22,830:INFO:choose_better activated
+2026-03-25 18:39:22,830:INFO:SubProcess create_model() called ==================================
+2026-03-25 18:39:22,830:INFO:Initializing create_model()
+2026-03-25 18:39:22,830:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:39:22,830:INFO:Checking exceptions
+2026-03-25 18:39:22,830:INFO:Importing libraries
+2026-03-25 18:39:22,830:INFO:Copying training dataset
+2026-03-25 18:39:22,885:INFO:Defining folds
+2026-03-25 18:39:22,885:INFO:Declaring metric variables
+2026-03-25 18:39:22,885:INFO:Importing untrained model
+2026-03-25 18:39:22,885:INFO:Declaring custom model
+2026-03-25 18:39:22,885:INFO:Gradient Boosting Classifier Imported successfully
+2026-03-25 18:39:22,885:INFO:Starting cross validation
+2026-03-25 18:39:22,886:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-03-25 18:40:09,434:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,553:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,609:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,704:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,721:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,738:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,836:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,892:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:09,995:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:10,008:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:10,025:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:10,117:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:10,172:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:10,281:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:10,308:WARNING:/opt/anaconda3/envs/kaggle-env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-03-25 18:40:10,801:INFO:Calculating mean and std
+2026-03-25 18:40:10,802:INFO:Creating metrics dataframe
+2026-03-25 18:40:10,809:INFO:Finalizing model
+2026-03-25 18:41:02,013:INFO:Uploading results into container
+2026-03-25 18:41:02,014:INFO:Uploading model into container now
+2026-03-25 18:41:02,014:INFO:_master_model_container: 8
+2026-03-25 18:41:02,014:INFO:_display_container: 5
+2026-03-25 18:41:02,014:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-03-25 18:41:02,014:INFO:create_model() successfully completed......................................
+2026-03-25 18:41:02,075:INFO:SubProcess create_model() end ==================================
+2026-03-25 18:41:02,075:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False) result for Accuracy is 0.859
+2026-03-25 18:41:02,075:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False) result for Accuracy is 0.8611
+2026-03-25 18:41:02,075:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False) is best model
+2026-03-25 18:41:02,075:INFO:choose_better completed
+2026-03-25 18:41:02,076:INFO:_master_model_container: 8
+2026-03-25 18:41:02,076:INFO:_display_container: 4
+2026-03-25 18:41:02,077:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-03-25 18:41:02,077:INFO:tune_model() successfully completed......................................
+2026-03-25 18:41:02,137:INFO:Initializing plot_model()
+2026-03-25 18:41:02,137:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, system=True)
+2026-03-25 18:41:02,137:INFO:Checking exceptions
+2026-03-25 18:41:02,167:INFO:Preloading libraries
+2026-03-25 18:41:02,175:INFO:Copying training dataset
+2026-03-25 18:41:02,175:INFO:Plot type: feature
+2026-03-25 18:41:02,176:WARNING:No coef_ found. Trying feature_importances_
+2026-03-25 18:41:02,373:INFO:Visual Rendered Successfully
+2026-03-25 18:41:02,423:INFO:plot_model() successfully completed......................................
+2026-03-25 18:41:02,427:INFO:Initializing finalize_model()
+2026-03-25 18:41:02,427:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2026-03-25 18:41:02,428:INFO:Finalizing GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-03-25 18:41:02,448:INFO:Initializing create_model()
+2026-03-25 18:41:02,448:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.15, loss='log_loss', max_depth=7,
+                           max_features=1.0, max_leaf_nodes=None,
+                           min_impurity_decrease=0.02, min_samples_leaf=5,
+                           min_samples_split=5, min_weight_fraction_leaf=0.0,
+                           n_estimators=230, n_iter_no_change=None,
+                           random_state=123, subsample=0.85, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2026-03-25 18:41:02,448:INFO:Checking exceptions
+2026-03-25 18:41:02,448:INFO:Importing libraries
+2026-03-25 18:41:02,448:INFO:Copying training dataset
+2026-03-25 18:41:02,450:INFO:Defining folds
+2026-03-25 18:41:02,450:INFO:Declaring metric variables
+2026-03-25 18:41:02,450:INFO:Importing untrained model
+2026-03-25 18:41:02,450:INFO:Declaring custom model
+2026-03-25 18:41:02,450:INFO:Gradient Boosting Classifier Imported successfully
+2026-03-25 18:41:02,451:INFO:Cross validation set to False
+2026-03-25 18:41:02,451:INFO:Fitting Model
+2026-03-25 18:46:21,648:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'SeniorCitizen', 'tenure',
+                                             'MonthlyCharges', 'TotalCharges'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_...
+                                            criterion='friedman_mse', init=None,
+                                            learning_rate=0.15, loss='log_loss',
+                                            max_depth=7, max_features=1.0,
+                                            max_leaf_nodes=None,
+                                            min_impurity_decrease=0.02,
+                                            min_samples_leaf=5,
+                                            min_samples_split=5,
+                                            min_weight_fraction_leaf=0.0,
+                                            n_estimators=230,
+                                            n_iter_no_change=None,
+                                            random_state=123, subsample=0.85,
+                                            tol=0.0001, validation_fraction=0.1,
+                                            verbose=0, warm_start=False))],
+         verbose=False)
+2026-03-25 18:46:21,648:INFO:create_model() successfully completed......................................
+2026-03-25 18:46:21,730:INFO:_master_model_container: 8
+2026-03-25 18:46:21,730:INFO:_display_container: 4
+2026-03-25 18:46:21,743:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'SeniorCitizen', 'tenure',
+                                             'MonthlyCharges', 'TotalCharges'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_...
+                                            criterion='friedman_mse', init=None,
+                                            learning_rate=0.15, loss='log_loss',
+                                            max_depth=7, max_features=1.0,
+                                            max_leaf_nodes=None,
+                                            min_impurity_decrease=0.02,
+                                            min_samples_leaf=5,
+                                            min_samples_split=5,
+                                            min_weight_fraction_leaf=0.0,
+                                            n_estimators=230,
+                                            n_iter_no_change=None,
+                                            random_state=123, subsample=0.85,
+                                            tol=0.0001, validation_fraction=0.1,
+                                            verbose=0, warm_start=False))],
+         verbose=False)
+2026-03-25 18:46:21,743:INFO:finalize_model() successfully completed......................................
+2026-03-25 18:46:21,836:INFO:Initializing predict_model()
+2026-03-25 18:46:21,836:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15f7207f0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['id', 'SeniorCitizen', 'tenure',
+                                             'MonthlyCharges', 'TotalCharges'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_...
+                                            criterion='friedman_mse', init=None,
+                                            learning_rate=0.15, loss='log_loss',
+                                            max_depth=7, max_features=1.0,
+                                            max_leaf_nodes=None,
+                                            min_impurity_decrease=0.02,
+                                            min_samples_leaf=5,
+                                            min_samples_split=5,
+                                            min_weight_fraction_leaf=0.0,
+                                            n_estimators=230,
+                                            n_iter_no_change=None,
+                                            random_state=123, subsample=0.85,
+                                            tol=0.0001, validation_fraction=0.1,
+                                            verbose=0, warm_start=False))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x168cb0310>)
+2026-03-25 18:46:21,836:INFO:Checking exceptions
+2026-03-25 18:46:21,837:INFO:Preloading libraries
+2026-03-25 18:46:21,837:INFO:Set up data.
+2026-03-25 18:46:22,076:INFO:Set up index.
