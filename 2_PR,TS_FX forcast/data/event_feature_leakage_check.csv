@@ -1,0 +1,5 @@
+source,feature,event_days,changed_on_event_day,suspicious_rate,event_min_change
+dff,dff_surprise,39,6,0.15384615384615385,0.1
+cpiaucsl,cpi_surprise,79,0,0.0,1e-09
+payems,payems_surprise,80,0,0.0,1e-06
+unrate,unrate_surprise,57,0,0.0,1e-09
